@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import api from "../utils/axios";
-// import Image from "next/image";
-import { Box } from "@mui/material";
+import Image from "next/image";
+// import { Box } from "@mui/material";
 
 interface Tag {
   id: number;
@@ -49,7 +49,7 @@ export default function TagList({ onSelect, activeTag }: TagListProps) {
           className={`px-3 py-1 flex flex-col rounded-lg items-center gap-2 ${
             activeTag === tag.name ? "bg-blue-200 text-white" : ""
           }`}>
-          <img
+          <Image
             src={tag.image_url}
             alt={tag.name}
             className="w-8 h-8 object-cover"
