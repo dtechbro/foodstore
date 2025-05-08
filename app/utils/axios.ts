@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000", // Express backend base URL
+  baseURL: "https://foodstore-backend-production.up.railway.app", // Express backend base URL
 });
 
 export default api;
